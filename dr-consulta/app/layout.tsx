@@ -3,12 +3,20 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"] })
 
 export const metadata: Metadata = {
-  title: "Inovamed - Especialistas em Escleroterapia",
-  description: "Tratamento moderno e eficaz para varizes com resultados visíveis",
-    generator: 'v0.dev'
+  title: "Inovamed | Escleroterapia de Excelência para Municípios",
+  description:
+    "Levamos profissionais especializados, ultrassonografia de última geração e gestão completa do atendimento ao seu município. Escleroterapia com espuma de alto padrão.",
+  keywords: "escleroterapia, varizes, saúde municipal, tratamento vascular, escleroterapia com espuma",
+  openGraph: {
+    title: "Inovamed | Escleroterapia de Excelência para Municípios",
+    description:
+      "Solução completa em escleroterapia com espuma para a saúde pública. Profissionais de excelência levados diretamente ao seu município.",
+    type: "website",
+    locale: "pt_BR",
+  },
 }
 
 export default function RootLayout({
@@ -17,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-BR" className="scroll-smooth">
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   )
 }
