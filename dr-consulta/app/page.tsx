@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import {
   ChevronDown,
   ChevronUp,
@@ -317,15 +318,13 @@ export default function Home() {
               <p className="mt-2 text-sm leading-relaxed text-gray-200 sm:text-base">
                 Atendimento por videochamada com a equipe da Inovamed.
               </p>
-              <a
-                href="https://wa.me/5575981619392?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20teleconsulta%20com%20cirurgi%C3%A3o%20vascular%20da%20Inovamed."
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/teleconsulta"
                 className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-navy-blue transition-colors hover:bg-cyan-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-200"
               >
                 Saiba mais sobre a teleconsulta
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </a>
+              </Link>
             </div>
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 rounded-full mb-5 sm:mb-6 border border-white/20">
               <HeartPulse className="w-4 h-4" />
