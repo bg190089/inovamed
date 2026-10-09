@@ -366,12 +366,11 @@ export default function Home() {
 
       {/* ========== TRUST BAR ========== */}
       <section className="bg-gray-50 border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 grid grid-cols-3 gap-4 sm:gap-8">
           {[
             { value: 5000, suffix: "+", label: "Pacientes atendidos" },
             { value: 90, suffix: "%+", label: "Taxa de satisfação" },
             { value: 100, suffix: "%", label: "Especialistas titulados" },
-            { value: 30, suffix: "min", label: "Tempo médio por sessão" },
           ].map((stat, i) => (
             <div key={i} className="text-center">
               <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-navy-blue">
